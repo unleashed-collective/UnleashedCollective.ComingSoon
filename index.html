@@ -19,7 +19,7 @@
     --line-strong:rgba(237,233,223,0.22);
   }
   *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+  html{scroll-behavior:smooth;overflow-x:hidden;}
   body{
     background:var(--white);
     color:var(--paper);
@@ -27,7 +27,6 @@
     font-weight:400;
     line-height:1.5;
     -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
   }
   a{color:inherit;}
 
@@ -35,7 +34,7 @@
 
   /* NAV */
   header{
-    position:fixed;top:0;left:0;right:0;
+    position:absolute;top:0;left:0;right:0;
     z-index:50;
     padding:22px 0;
     background:linear-gradient(to bottom, rgba(190, 190, 190, 0.769), rgba(190,190,190,0));
@@ -44,7 +43,7 @@
   header .wrap{display:flex;align-items:center;justify-content:flex-end;position:relative;}
   .wordmark{position:absolute;left:50%;transform:translateX(-50%);}
   .wordmark .top{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:16px;letter-spacing:0.08em;}
-  .logo-mark{display:block;height:50px;width:auto;}
+  .logo-mark{display:block;height:60px;width:auto;}
   .cta-pill{
     font-family:'IBM Plex Mono',monospace;
     font-size:11px;
@@ -255,7 +254,7 @@
     .grid{grid-template-columns:1fr;}
     .story .wrap{grid-template-columns:1fr;padding-top:40px;gap:24px;}
     .amazon-band .wrap{flex-direction:column;align-items:flex-start;}
-    .logo-mark{height:30px;}
+    .logo-mark{height:40px;}
   }
 </style>
 </head>
