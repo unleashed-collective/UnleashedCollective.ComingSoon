@@ -1,0 +1,8 @@
+.header { position: absolute; z-index: 50; inset: 0 0 auto; padding: 14px 0; background: var(--white); }
+.inner { position: relative; display: flex; align-items: center; justify-content: space-between; max-width: none; margin: 0; padding-right: 35px; padding-left: 35px; }
+.tag { position: absolute; top: 50%; left: 50%; color: var(--ink); font-size: 13px; letter-spacing: .04em; text-decoration: none; white-space: nowrap; transform: translate(-50%, -50%); }
+.language { display: flex; align-items: center; gap: 10px; }
+.language a { color: var(--stone); font-family: Archivo, sans-serif; font-size: 11px; font-weight: 600; letter-spacing: .08em; text-decoration: none; }
+.language a:hover, .language .active { color: var(--ink); }
+.language span { width: 1px; height: 12px; background: var(--line-strong); }
+@media (max-width: 600px) { .tag { display: none; } .inner { padding-right: 20px; padding-left: 20px; } }
